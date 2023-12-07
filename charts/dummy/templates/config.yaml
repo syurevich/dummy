@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flux-cm-colors
+data:
+  color1: "green"
+  color2: {{ .Values.color2 | quote }}
